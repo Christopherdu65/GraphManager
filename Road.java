@@ -1,6 +1,6 @@
 
 /**
- * @author Monthe Chris. Raoul
+ * @author Christopher R.
  * Road class which represents attributes of an edge
  *
  */
