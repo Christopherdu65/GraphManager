@@ -3,7 +3,7 @@ import java.util.Collections;
 
 
 /**
- * @author Monthe Chris. Raoul
+ * @author Christopher R.
  *Manager class for the graph class
  */
 public class TownGraphManager implements TownGraphManagerInterface {
@@ -104,21 +104,8 @@ public class TownGraphManager implements TownGraphManagerInterface {
 		Town v2 =  getTown(town2);
 		if(v1 != null && v2 != null){
 			result =  m.shortestPath(v1, v2);
-//			Collections.sort(result);
 			return result;
 	}
 		return null;
-//		if(v1 != null && v2 != null) {
-//			m.dijkstraShortestPath(v1);
-//			Town dest = v2;
-//			Town prev = dest.getBackPath();
-//			while(prev != null) {
-//				Road r = m.getEdge(prev, dest);
-//				result.add(prev.getName() + " via " + r.getName() + " to " + dest.getName() + " " + r.getWeight() +  " mi");
-//				dest = prev;
-//				prev = prev.backPath;
-//	}
-//		}
-//		return result;
 	}
 }
