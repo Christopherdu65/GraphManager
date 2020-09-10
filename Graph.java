@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * @author Monthe Chris. Raoul
- *A mathematical graph-theory graph
+ * @author Christopher R.
+ *A graph implementation
  */
 public class Graph implements GraphInterface<Town, Road>{
 		private Set<Town> vertices;
@@ -157,9 +157,6 @@ public class Graph implements GraphInterface<Town, Road>{
 		@Override
 		public void dijkstraShortestPath(Town sourceVertex) {
 			open.addAll(vertices);
-//			for(Town i: open) {
-////			System.out.println(i.getName());
-////		}
 			closed.add(sourceVertex);
 			open.remove(sourceVertex);
 			//closed.add(sourceVertex);
